@@ -9,6 +9,7 @@ for (let i = 0; i < 100; i++) {
     faq: Math.floor(Math.random() * 16),
     updates: Math.floor(Math.random() * 6),
     comments: Math.floor(Math.random() * 1000),
+    reminders: [],
   });
   projects.push(project);
 }
