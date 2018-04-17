@@ -7,6 +7,10 @@ const projectSchema = new mongoose.Schema({
   faq: Number,
   updates: Number,
   comments: Number,
+  reminders: [{
+    email: String,
+    reminderCreatedAt: Date,
+  }],
 });
 
 
