@@ -10,7 +10,7 @@ class RemindMeButton extends Component {
       reminderForm: false,
       validEmail: '',
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleFormClick = this.handleFormClick.bind(this);
     this.handleExitFormClick = this.handleExitFormClick.bind(this);
     this.handleEmailSubmit = this.handleEmailSubmit.bind(this);
     this.checkEmailValidity = this.checkEmailValidity.bind(this);
@@ -90,7 +90,7 @@ class RemindMeButton extends Component {
             <button id="handleEmailSubmit" onClick={this.handleEmailSubmit}>Submit</button>
             <button id="close" onClick={this.handleExitFormClick}>Close</button>
           </div>}
-        <button id={this.state.reminderSet ? 'remindMe reminded' : 'remindMe'} onClick={this.handleClick}>Remind me</button>
+        <button id={this.state.reminderSet ? 'remindMe reminded' : 'remindMe'} onClick={this.handleFormClick}>Remind me</button>
 
       </div>
       // conditionally render input form
