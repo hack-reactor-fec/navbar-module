@@ -16,7 +16,7 @@ class RemindMeButton extends Component {
     this.checkEmailValidity = this.checkEmailValidity.bind(this);
   }
 
-  handleClick() {
+  handleFormClick() {
     this.setState({
       reminderForm: true,
     });
