@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "webpack"
   },
   "repository": {
@@ -17,6 +17,9 @@
     "url": "https://github.com/hack-reactor-fec/navbar-module/issues"
   },
   "homepage": "https://github.com/hack-reactor-fec/navbar-module#readme",
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/test-setup.js"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
