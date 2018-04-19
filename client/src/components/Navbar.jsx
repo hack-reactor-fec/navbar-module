@@ -6,17 +6,19 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      faqTotal: 0,
-      updatesTotal: 0,
-      commentsTotal: 0,
+      faqTotal: 9,
+      updatesTotal: 3,
+      commentsTotal: 3271,
     };
   }
 
   render() {
     return (
-      <div className="navbarContainer">
-        <NavLinks faqTotal={this.state.faqTotal} updatesTotal={this.state.updatesTotal} commentsTotal={this.state.commentsTotal} />
-        <InterestedLinks />
+      <div className="navbarContainerWrapper">
+        <div className="navbarContainer">
+          <NavLinks faqTotal={this.state.faqTotal} updatesTotal={this.state.updatesTotal} commentsTotal={this.state.commentsTotal} />
+          <InterestedLinks />
+        </div>
       </div>
     );
   }

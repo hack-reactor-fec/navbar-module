@@ -1,0 +1,27 @@
+.navLinksContainer {
+  display: flex;
+  flex: 2;
+}
+
+.navButton {
+  font-size: 1.4rem;
+  margin-right: 1.8rem;
+  margin-left: 1.8rem;
+  padding: 20px 5px 17px;
+  padding-bottom: 2.1rem;
+  vertical-align: baseline;
+  span {
+    vertical-align: super;
+    color: #009E74;
+    font-size: 10px;
+  }
+}
+
+.navButton:hover {
+  cursor: pointer;
+}
+
+.selected {
+  font-weight: bold;
+  border-bottom: 3px solid black;
+}

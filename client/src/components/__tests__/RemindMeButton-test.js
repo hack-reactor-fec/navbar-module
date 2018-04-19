@@ -7,4 +7,9 @@ describe('RemindMeButton Component', () => {
   it('should render without throwing an error', () => {
     expect(shallow(<RemindMeButton />).find('#remindMeComponent').length).toEqual(1);
   });
+
+  // it('should render a reminderForm when button remindMeButton is clicked', () => {
+  //   const wrapper = render(<RemindMeButton />);
+  //   console.log(wrapper);
+  // });
 });

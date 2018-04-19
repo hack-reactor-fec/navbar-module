@@ -147,7 +147,10 @@
 <a name='L99'></a><a href='#L99'>99</a>
 <a name='L100'></a><a href='#L100'>100</a>
 <a name='L101'></a><a href='#L101'>101</a>
-<a name='L102'></a><a href='#L102'>102</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -224,6 +227,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -260,13 +266,13 @@ class RemindMeButton extends Component {
       reminderForm: false,
       validEmail: '',
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleFormClick = this.handleFormClick.bind(this);
     this.handleExitFormClick = this.handleExitFormClick.bind(this);
     this.handleEmailSubmit = this.handleEmailSubmit.bind(this);
     this.checkEmailValidity = this.checkEmailValidity.bind(this);
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  ha</span>ndleClick() {
+<span class="fstat-no" title="function not covered" >  ha</span>ndleFormClick() {
 <span class="cstat-no" title="statement not covered" >    this.setState({</span>
       reminderForm: true,
     });
@@ -327,21 +333,24 @@ class RemindMeButton extends Component {
     return (
       &lt;div id="remindMeComponent"&gt;
         {this.state.reminderForm &amp;&amp;
-<span class="branch-1 cbranch-no" title="branch not covered" >          &lt;div className="reminderFormContainer"&gt;</span>
+<span class="branch-1 cbranch-no" title="branch not covered" >        &lt;div className="reminderFormContainerWrapper"&gt;</span>
+          &lt;div className="reminderFormContainer"&gt;
             &lt;button onClick={this.handleExitFormClick}&gt;X&lt;/button&gt;
-            &lt;h6&gt;{this.state.reminderSet ? 'Project saved.' : 'Remind me'}&lt;/h6&gt;
-            &lt;p&gt;{this.state.reminderSet ? `We'll remind you 48 hours before this project ends` : `Enter your email address and we'll remind you 48 hours before this project ends.`}&lt;/p&gt;
-            {this.state.reminderSet ||
-              &lt;input className={this.state.validEmail === true ? 'emailInput validEmail' : (this.state.validEmail === false ? 'emailInput invalidEmail' : 'emailInput')} onChange={this.checkEmailValidity} placeHolder="Email Address" /&gt;
-            }
-            {this.state.validEmail === false &amp;&amp;
-              &lt;p&gt;Your email is invalid&lt;/p&gt;
-            }
-            &lt;button id="handleEmailSubmit" onClick={this.handleEmailSubmit}&gt;Submit&lt;/button&gt;
-            &lt;button id="close" onClick={this.handleExitFormClick}&gt;Close&lt;/button&gt;
-          &lt;/div&gt;}
-        &lt;button id={this.state.reminderSet ? <span class="branch-0 cbranch-no" title="branch not covered" >'remindMe reminded' </span>: 'remindMe'} onClick={this.handleClick}&gt;Remind me&lt;/button&gt;
-&nbsp;
+            &lt;div className="reminderFormMain"&gt;
+              &lt;p id="title"&gt;{this.state.reminderSet ? 'Project saved.' : 'Remind me'}&lt;/p&gt;
+              &lt;p id="body"&gt;{this.state.reminderSet ? `We'll remind you 48 hours before this project ends` : `Enter your email address and we'll remind you 48 hours before this project ends.`}&lt;/p&gt;
+              {this.state.reminderSet ||
+                &lt;input className={this.state.validEmail === true ? 'emailInput validEmail' : (this.state.validEmail === false ? 'emailInput invalidEmail' : 'emailInput')} onChange={this.checkEmailValidity} placeholder="Email Address" /&gt;
+              }
+              {this.state.validEmail === false &amp;&amp;
+                &lt;p&gt;Your email is invalid&lt;/p&gt;
+              }
+            &lt;button id="emailSubmitButton" onClick={this.handleEmailSubmit}&gt;Remind me&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;span id="close" onClick={this.handleExitFormClick}&gt;Close&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;}
+        &lt;div className={this.state.reminderSet ? <span class="branch-0 cbranch-no" title="branch not covered" >'remindMe reminder' </span>: 'remindMe'} onClick={this.handleFormClick}&gt; &lt;span&gt;Remind me&lt;/span&gt; &lt;/div&gt;
       &lt;/div&gt;
       // conditionally render input form
     );
@@ -355,7 +364,7 @@ export default RemindMeButton;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 18 2018 11:47:14 GMT-0700 (PDT)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 18 2018 21:08:33 GMT-0700 (PDT)
 </div>
 </div>
 <script src="../../../../prettify.js"></script>
