@@ -51,7 +51,12 @@ class RemindMeButton extends Component {
   checkEmailValidity() {
     const context = this;
     let valid = false;
-    let email = document.getElementsByClassName('emailInput')[0].value;
+    let email;
+    if (document.getElementsByClassName('emailInput')[0]) {
+      email = document.getElementsByClassName('emailInput')[0].value;
+    } else {
+      email = [];
+    }
     if (email.length > 0) {
       email = email.split('@');
       if (email[0].length > 0 && email[1] !== undefined) {
@@ -82,14 +87,14 @@ class RemindMeButton extends Component {
             <button onClick={this.handleExitFormClick}>X</button>
             <div className="reminderFormMain">
               <p id="title">{this.state.reminderSet ? 'Project saved.' : 'Remind me'}</p>
-              <p id="body">{this.state.reminderSet ? `We'll remind you 48 hours before this project ends` : `Enter your email address and we'll remind you 48 hours before this project ends.`}</p>
+              <p id="body">{this.state.reminderSet ? 'We\'ll remind you 48 hours before this project ends' : 'Enter your email address and we\'ll remind you 48 hours before this project ends.'}</p>
               {this.state.reminderSet ||
                 <input className={this.state.validEmail === true ? 'emailInput validEmail' : (this.state.validEmail === false ? 'emailInput invalidEmail' : 'emailInput')} onChange={this.checkEmailValidity} placeholder="Email Address" />
               }
               {this.state.validEmail === false &&
                 <p>Your email is invalid</p>
               }
-            <button id="emailSubmitButton" onClick={this.handleEmailSubmit}>Remind me</button>
+              <button id="emailSubmitButton" onClick={this.handleEmailSubmit}>Remind me</button>
             </div>
             <span id="close" onClick={this.handleExitFormClick}>Close</span>
           </div>
