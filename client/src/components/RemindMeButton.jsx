@@ -77,21 +77,24 @@ class RemindMeButton extends Component {
     return (
       <div id="remindMeComponent">
         {this.state.reminderForm &&
+        <div className="reminderFormContainerWrapper">
           <div className="reminderFormContainer">
             <button onClick={this.handleExitFormClick}>X</button>
-            <h6>{this.state.reminderSet ? 'Project saved.' : 'Remind me'}</h6>
-            <p>{this.state.reminderSet ? `We'll remind you 48 hours before this project ends` : `Enter your email address and we'll remind you 48 hours before this project ends.`}</p>
-            {this.state.reminderSet ||
-              <input className={this.state.validEmail === true ? 'emailInput validEmail' : (this.state.validEmail === false ? 'emailInput invalidEmail' : 'emailInput')} onChange={this.checkEmailValidity} placeHolder="Email Address" />
-            }
-            {this.state.validEmail === false &&
-              <p>Your email is invalid</p>
-            }
-            <button id="handleEmailSubmit" onClick={this.handleEmailSubmit}>Submit</button>
-            <button id="close" onClick={this.handleExitFormClick}>Close</button>
-          </div>}
-        <button id={this.state.reminderSet ? 'remindMe reminded' : 'remindMe'} onClick={this.handleFormClick}>Remind me</button>
-
+            <div className="reminderFormMain">
+              <p id="title">{this.state.reminderSet ? 'Project saved.' : 'Remind me'}</p>
+              <p id="body">{this.state.reminderSet ? `We'll remind you 48 hours before this project ends` : `Enter your email address and we'll remind you 48 hours before this project ends.`}</p>
+              {this.state.reminderSet ||
+                <input className={this.state.validEmail === true ? 'emailInput validEmail' : (this.state.validEmail === false ? 'emailInput invalidEmail' : 'emailInput')} onChange={this.checkEmailValidity} placeholder="Email Address" />
+              }
+              {this.state.validEmail === false &&
+                <p>Your email is invalid</p>
+              }
+            <button id="emailSubmitButton" onClick={this.handleEmailSubmit}>Remind me</button>
+            </div>
+            <span id="close" onClick={this.handleExitFormClick}>Close</span>
+          </div>
+        </div>}
+        <div className={this.state.reminderSet ? 'remindMe reminder' : 'remindMe'} onClick={this.handleFormClick}> <span>Remind me</span> </div>
       </div>
       // conditionally render input form
     );

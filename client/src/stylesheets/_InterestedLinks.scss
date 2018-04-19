@@ -1,31 +1,3 @@
-.navLinksContainer {
-  display: flex;
-  flex: 2;
-}
-
-.navButton {
-  font-size: 1.4rem;
-  margin-right: 1.8rem;
-  margin-left: 1.8rem;
-  padding: 20px 5px 17px;
-  padding-bottom: 2.1rem;
-  vertical-align: baseline;
-}
-.navButton span {
-  vertical-align: super;
-  color: #009E74;
-  font-size: 10px;
-}
-
-.navButton:hover {
-  cursor: pointer;
-}
-
-.selected {
-  font-weight: bold;
-  border-bottom: 3px solid black;
-}
-
 .interestedLinksContainer {
   display: flex;
   flex: 1;
@@ -89,15 +61,15 @@
   padding: 2.4rem;
   margin: 1rem;
   text-align: center;
-  box-shadow: 0 0 4px 0 rgba(168, 167, 164, 0.4);
-}
-.reminderFormMain #title {
-  font-size: 1.8rem;
-  margin-bottom: 2.4rem;
-  margin-top: 0;
-}
-.reminderFormMain #body {
-  font-size: 14px;
+  box-shadow: 0 0 4px 0 rgba(168,167,164,0.4);
+  #title {
+    font-size: 1.8rem;
+    margin-bottom: 2.4rem;
+    margin-top: 0;
+  }
+  #body {
+    font-size: 14px;
+  }
 }
 
 #close {
@@ -131,19 +103,6 @@
   font-size: 1.6rem;
 }
 
-html {
-  font-size: 10px;
-  font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+#emailSubmitButton:hover {
 
-.navbarContainer {
-  display: flex;
-  max-width: 1040px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.navbarContainerWrapper {
-  border-top: 1px solid #DCDEDD;
-  border-bottom: 1px solid #DCDEDD;
 }
