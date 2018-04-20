@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1524115790740" clover="3.2.0">
-  <project timestamp="1524115790741" name="All files">
-    <metrics statements="46" coveredstatements="23" conditionals="36" coveredconditionals="12" methods="18" coveredmethods="11" elements="100" coveredelements="46" complexity="0" loc="46" ncloc="46" packages="2" files="7" classes="7">
+<coverage generated="1524170397163" clover="3.2.0">
+  <project timestamp="1524170397163" name="All files">
+    <metrics statements="48" coveredstatements="32" conditionals="38" coveredconditionals="17" methods="18" coveredmethods="13" elements="104" coveredelements="62" complexity="0" loc="48" ncloc="48" packages="2" files="7" classes="7">
       <package name="navbar-module">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="test-setup.js" path="/Users/samgetlan/Documents/HackReactor/navbar-module/test-setup.js">
@@ -10,7 +10,7 @@
         </file>
       </package>
       <package name="navbar-module.client.src.components">
-        <metrics statements="45" coveredstatements="22" conditionals="36" coveredconditionals="12" methods="18" coveredmethods="11"/>
+        <metrics statements="47" coveredstatements="31" conditionals="38" coveredconditionals="17" methods="18" coveredmethods="13"/>
         <file name="BackThisProjectButton.jsx" path="/Users/samgetlan/Documents/HackReactor/navbar-module/client/src/components/BackThisProjectButton.jsx">
           <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
           <line num="7" count="1" type="stmt"/>
@@ -43,36 +43,38 @@
           <line num="16" count="1" type="stmt"/>
         </file>
         <file name="RemindMeButton.jsx" path="/Users/samgetlan/Documents/HackReactor/navbar-module/client/src/components/RemindMeButton.jsx">
-          <metrics statements="29" coveredstatements="8" conditionals="32" coveredconditionals="10" methods="8" coveredmethods="3"/>
-          <line num="7" count="2" type="stmt"/>
-          <line num="8" count="2" type="stmt"/>
-          <line num="13" count="2" type="stmt"/>
-          <line num="14" count="2" type="stmt"/>
-          <line num="15" count="2" type="stmt"/>
-          <line num="16" count="2" type="stmt"/>
-          <line num="20" count="1" type="stmt"/>
-          <line num="26" count="0" type="stmt"/>
+          <metrics statements="31" coveredstatements="17" conditionals="34" coveredconditionals="15" methods="8" coveredmethods="5"/>
+          <line num="7" count="4" type="stmt"/>
+          <line num="8" count="4" type="stmt"/>
+          <line num="13" count="4" type="stmt"/>
+          <line num="14" count="4" type="stmt"/>
+          <line num="15" count="4" type="stmt"/>
+          <line num="16" count="4" type="stmt"/>
+          <line num="20" count="3" type="stmt"/>
+          <line num="26" count="1" type="stmt"/>
           <line num="32" count="0" type="cond" truecount="0" falsecount="4"/>
           <line num="33" count="0" type="stmt"/>
           <line num="37" count="0" type="stmt"/>
           <line num="40" count="0" type="stmt"/>
           <line num="42" count="0" type="stmt"/>
           <line num="47" count="0" type="stmt"/>
-          <line num="52" count="0" type="stmt"/>
-          <line num="53" count="0" type="stmt"/>
-          <line num="54" count="0" type="stmt"/>
-          <line num="55" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="52" count="1" type="stmt"/>
+          <line num="53" count="1" type="stmt"/>
+          <line num="55" count="1" type="cond" truecount="1" falsecount="1"/>
           <line num="56" count="0" type="stmt"/>
-          <line num="57" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="58" count="0" type="stmt"/>
-          <line num="59" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="60" count="0" type="stmt"/>
+          <line num="58" count="1" type="stmt"/>
+          <line num="60" count="1" type="cond" truecount="1" falsecount="1"/>
           <line num="61" count="0" type="stmt"/>
-          <line num="62" count="0" type="stmt"/>
-          <line num="68" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="69" count="0" type="stmt"/>
-          <line num="70" count="0" type="stmt"/>
-          <line num="77" count="3" type="stmt"/>
+          <line num="62" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="63" count="0" type="stmt"/>
+          <line num="64" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="65" count="0" type="stmt"/>
+          <line num="66" count="0" type="stmt"/>
+          <line num="67" count="0" type="stmt"/>
+          <line num="73" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="74" count="1" type="stmt"/>
+          <line num="75" count="1" type="stmt"/>
+          <line num="82" count="9" type="stmt"/>
         </file>
       </package>
     </metrics>
