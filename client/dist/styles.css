@@ -1,6 +1,7 @@
 .navLinksContainer {
   display: flex;
   flex: 2;
+  position: relative;
 }
 
 .navButton {
@@ -19,11 +20,44 @@
 
 .navButton:hover {
   cursor: pointer;
+  color: #009E74;
 }
 
 .selected {
   font-weight: bold;
-  border-bottom: 3px solid black;
+}
+
+.movingUnderline {
+  position: absolute;
+  height: 3px;
+  background-color: black;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+
+#campaign.navButton.selected ~ .movingUnderline {
+  margin-left: 18px;
+  width: 76.22px;
+}
+
+#faq.navButton.selected ~ .movingUnderline {
+  margin-left: 130.22px;
+  width: 39.53px;
+}
+
+#updates.navButton.selected ~ .movingUnderline {
+  margin-left: 205.75px;
+  width: 69.39px;
+}
+
+#comments.navButton.selected ~ .movingUnderline {
+  margin-left: 311.14px;
+  width: 103.27px;
+}
+
+#community.navButton.selected ~ .movingUnderline {
+  margin-left: 450.41px;
+  width: 85.56px;
 }
 
 .interestedLinksContainer {
