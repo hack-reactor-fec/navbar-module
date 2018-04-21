@@ -73,7 +73,7 @@
   height: 100%;
   top: 0px;
   left: 0px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -82,6 +82,7 @@
 .reminderFormContainer {
   width: 42%;
   margin: auto;
+  position: relative;
 }
 
 .reminderFormMain {
@@ -98,12 +99,6 @@
 }
 .reminderFormMain #body {
   font-size: 14px;
-}
-
-#close {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 }
 
 .emailInput {
@@ -139,12 +134,56 @@
   font-size: 1.6rem;
 }
 
+#emailSubmitButton:hover {
+  cursor: pointer;
+  background-color: #037362;
+  transform: translateY(-1px);
+}
+
 #emailInvalidText {
   color: red;
   margin-top: 0.6rem;
   margin-bottom: 0;
   font-size: 1.4rem;
   text-align: start;
+}
+
+#x {
+  position: absolute;
+  top: 0;
+  right: -3rem;
+  margin-top: 1rem;
+  border: none;
+  box-shadow: none;
+  font-size: 1.4rem;
+  color: gray;
+}
+
+.closeButtonContainer {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  padding-top: 1.4rem;
+}
+
+#close {
+  border: none;
+  box-shadow: none;
+  font-size: 1.4rem;
+  color: gray;
+  text-decoration: underline;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#close:active {
+  outline: 1px black;
+}
+
+#x:active {
+  outline: 1px black;
 }
 
 html {
