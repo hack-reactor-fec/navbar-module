@@ -92,7 +92,7 @@ class RemindMeButton extends Component {
                 <input className={this.state.validEmail === true ? 'emailInput validEmail' : (this.state.validEmail === false ? 'emailInput invalidEmail' : 'emailInput')} onChange={this.checkEmailValidity} placeholder="Email Address" />
               }
               {this.state.validEmail === false &&
-                <p>Your email is invalid</p>
+                <p id="emailInvalidText">Your email is invalid</p>
               }
               <button id="emailSubmitButton" onClick={this.handleEmailSubmit}>Remind me</button>
             </div>

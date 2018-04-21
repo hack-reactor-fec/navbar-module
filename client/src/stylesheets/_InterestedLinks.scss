@@ -93,6 +93,14 @@
   border: 1px solid #009E74;
 }
 
+.emailInput.invalidEmail {
+  border: 1px solid red;
+}
+
+.emailInput.validEmail {
+  border: 1px solid #009E74;
+}
+
 #emailSubmitButton {
   width: 100%;
   margin-top: 2.4rem;
@@ -101,6 +109,14 @@
   color: white;
   height: 4.8rem;
   font-size: 1.6rem;
+}
+
+#emailInvalidText {
+  color: red;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  text-align: start;
 }
 
 #emailSubmitButton:hover {
