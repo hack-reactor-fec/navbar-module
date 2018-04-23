@@ -24,6 +24,7 @@ class NavLinks extends Component {
         <NavButton navButtonClick={this.navButtonClick} buttonId="updates" total={this.props.updatesTotal} selected={this.state.selected} display="Updates" />
         <NavButton navButtonClick={this.navButtonClick} buttonId="comments" total={this.props.commentsTotal} selected={this.state.selected} display="Comments" />
         <NavButton navButtonClick={this.navButtonClick} buttonId="community" selected={this.state.selected} display="Community" />
+        <div className="movingUnderline" />
       </div>
     );
   }
