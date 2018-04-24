@@ -30,7 +30,7 @@ class RemindMeButton extends Component {
 
   handleEmailSubmit() {
     if (this.state.validEmail && this.state.reminderSet === false) {
-      axios.put(`/api/navbar/${this.props.projectId}`, {
+      axios.put(`http://localhost:3002/api/navbar/${this.props.projectId}`, {
         email: document.getElementsByClassName('emailInput')[0].value,
       })
         .then((response) => {
