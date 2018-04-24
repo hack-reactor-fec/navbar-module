@@ -21,6 +21,6 @@ app.put('/api/navbar/:id', (req, res) => {
   });
 });
 
-const PORT = (process.env.PORT || 4000);
+const PORT = (process.env.PORT || 3002);
 
 app.listen(PORT, console.log('Listening to port:', PORT));
