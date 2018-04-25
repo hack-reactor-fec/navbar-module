@@ -236,3 +236,15 @@ html {
   border-top: 1px solid #DCDEDD;
   border-bottom: 1px solid #DCDEDD;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  background: white;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
