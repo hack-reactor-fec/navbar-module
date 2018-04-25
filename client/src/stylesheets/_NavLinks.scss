@@ -36,25 +36,29 @@
 }
 #campaign.navButton.selected ~ .movingUnderline {
   margin-left: 18px;
-  width: 76.22px;
+  width: 78.53px;
 }
 
 #faq.navButton.selected ~ .movingUnderline {
   margin-left: 130.22px;
-  width: 39.53px;
+  width: 41.19px;
 }
 
 #updates.navButton.selected ~ .movingUnderline {
   margin-left: 205.75px;
-  width: 69.39px;
+  width: 68.89px;
 }
 
 #comments.navButton.selected ~ .movingUnderline {
-  margin-left: 311.14px;
-  width: 103.27px;
+  margin-left: 308.64px;
+  width: 100.5px;
 }
 
 #community.navButton.selected ~ .movingUnderline {
-  margin-left: 450.41px;
-  width: 85.56px;
+  margin-left: 442.14px;
+  width: 88.06px;
+}
+
+.hidden {
+  display: none;
 }
