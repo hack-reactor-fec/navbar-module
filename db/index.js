@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongoUrl = 'mongodb://localhost/navbarModule';
+const mongoUrl = 'mongodb://admin:notairbnb@ds259109.mlab.com:59109/navbar-module';
 
 const db = mongoose.connect(mongoUrl);
 
