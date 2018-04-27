@@ -16,7 +16,7 @@ class Navbar extends Component {
 
   componentDidMount() {
     const context = this;
-    axios.get(`http://localhost:3002/api/navbar/${this.props.projectId}`)
+    axios.get(`http://54.245.43.177:80/api/navbar/${this.props.projectId}`)
       .then((response) => {
         console.log(response);
         context.setState({
