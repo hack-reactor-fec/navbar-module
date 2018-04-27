@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import axios from 'axios';
 import NavLinks from './NavLinks.jsx';
 import InterestedLinks from './InterestedLinks.jsx';
@@ -7,7 +8,7 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      projectId: 15,
+      projectId: this.props.projectId || 0,
       faqTotal: 0,
       updatesTotal: 0,
       commentsTotal: 0,
@@ -16,7 +17,7 @@ class Navbar extends Component {
 
   componentDidMount() {
     const context = this;
-    axios.get(`http://54.245.43.177:80/api/navbar/${this.props.projectId}`)
+    axios.get(`http://54.245.43.177:80/api/navbar/${this.state.projectId}`)
       .then((response) => {
         console.log(response);
         context.setState({
@@ -41,4 +42,5 @@ class Navbar extends Component {
     );
   }
 }
+
 export default Navbar;

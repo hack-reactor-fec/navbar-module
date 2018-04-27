@@ -9,6 +9,7 @@ app.use(express.static(`${__dirname}/../client/dist`));
 app.use(parser.json());
 app.use(cors());
 
+
 app.get('/api/navbar/:id', (req, res) => {
   utils.loadProject(req.params.id, (result) => {
     console.log('Loaded project');
